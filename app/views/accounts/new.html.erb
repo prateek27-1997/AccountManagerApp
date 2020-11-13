@@ -1,0 +1,31 @@
+<h1> New Account</h1>
+<%= form_for @account do |f| %>
+<p>
+  <%= f.label :Id %> <br>
+  <%= f.text_area :user_id %>
+</p>
+<p>
+  <%= f.label :Previous_balance %> <br>
+  <%= f.text_area :previous_balance %>
+</p>
+<p>
+  <%= f.label :Amount %> <br>
+  <%= f.text_area :amount %>
+</p>
+<p>
+  <%= f.label :Discount %> <br>
+  <%= f.text_area :discount %>
+</p>
+<p>
+  <%= f.label :Comments %> <br>
+  <%= f.text_area :comments %>
+</p>
+<p>
+  <%= f.label :Transaction_Type %> <br>
+  <%= f.text_area :transaction_type %>
+</p>
+<p>
+  <%= f.submit %>
+</p>
+<% end %>
+<td><%= link_to 'List Account', accounts_path %>

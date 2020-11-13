@@ -1,0 +1,13 @@
+<table>
+  <h1>List of Accountholders</h1>
+  <% @accounts.each do |account| %>
+    <tr>
+      <td>User Id: <%= account.user_id %></td>
+      <td>Amount: <%= account.amount %></td>
+      <td>Comment<%= account.comments %></td>
+      <td>Discount<%= account.discount %></td>
+      <td>Transation Type<%= account.transaction_type %></td>
+      <td>Balance: <%= account.balance %>
+    </tr>
+  <% end %>
+</table>
